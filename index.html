@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="download (1).jpg" alt="Image 1" onclick="openLightbox(this)">
+            <img src="download (2).jpg" alt="Image 2" onclick="openLightbox(this)">
+            <img src="download (3).jpg" alt="Image 3" onclick="openLightbox(this)">
+            <img src="download.jpg" alt="Image 4" onclick="openLightbox(this)">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
